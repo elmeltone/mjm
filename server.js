@@ -3,7 +3,7 @@ var express = require('express');
 var App = express();
 
 App.get('/', function(request, response) {
-  response.send('hello world');
+  response.send('This site is under construction. Please come back later :)');
 });
 
 App.get('/headers', function(request, response) {
