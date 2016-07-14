@@ -404,10 +404,12 @@ p {
   left: 0;
   height: 30px;
   width: 100%;
-  background: #DB5800; }
+  background: #DB5800;
+  color: #8EA106;
+  text-align: center; }
 
 .page {
-  height: 100vh;
+  height: 80vh;
   width: 100%; }
 
 .pictionary, .apihack {
@@ -439,4 +441,5 @@ p {
   letter-spacing: 12px; }
 
 .title-text {
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  margin-left: 3px; }

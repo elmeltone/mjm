@@ -62,10 +62,12 @@ p {
   height: 30px;
   width: 100%;
   background: $bold;
+  color: $complement;
+  text-align: center;
 }
 
 .page {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -106,4 +108,5 @@ p {
 
 .title-text {
   letter-spacing: 6px;
+  margin-left: 3px;
 }
