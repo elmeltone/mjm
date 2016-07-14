@@ -8,10 +8,11 @@ MERN, Mongo, Express, React.js, Node.js
 */
 /***** Colors ******/
 /* ---
-
-#02c8a7 aquamarine
-#f53240 bright coral
-#f9be02 golden
+#DB5800 burnt orange
+#FF9000 orange pulp
+#F0C600 golden
+#8EA106 lime
+#59631E leaves
 #ffffff white
 #000000 black
 */
@@ -385,3 +386,57 @@ textarea {
   /* 2 */ }
 
 /***** Mixins ******/
+/***** General Styles ******/
+html, body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #59631E; }
+
+p {
+  margin: 0; }
+
+/***** Detail Styles ******/
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background: #DB5800; }
+
+.page {
+  height: 100vh;
+  width: 100%; }
+
+.pictionary, .apihack {
+  background: #f2f2f2; }
+
+.container {
+  width: 210px;
+  margin: auto; }
+
+.icon {
+  margin-top: 18vh;
+  height: 210px;
+  background: #FF9000; }
+
+.name, .title {
+  width: 100%;
+  margin: 2px 0;
+  text-align: justify;
+  text-align-last: start; }
+
+.name {
+  font-family: "Arvo", serif;
+  font-size: 2em; }
+
+.firstname {
+  letter-spacing: 7px; }
+
+.lastname {
+  letter-spacing: 12px; }
+
+.title-text {
+  letter-spacing: 6px; }
