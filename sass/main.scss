@@ -1,0 +1,37 @@
+/*
+Theme Name: Portfolio
+Description: Web development portfolio featuring the MERN stack
+Author: Michael J Melton <meltonm83@gmail.com>
+Author URI: http://mjm.herokuapp.com
+Tags: Website, Portfolio, Drawing, Pictionary, Chat, Chatroom, API, Pictures,
+MERN, Mongo, Express, React.js, Node.js
+*/
+
+/***** Colors ******/
+
+$background: #7cdbd5;
+$complement: #02c8a7;
+$emphasis: #f53240;
+$anchor: #f9be02;
+$plain: #ffffff;
+$shadow: lighten(#000000, 15%);
+
+/* ---
+
+#02c8a7 aquamarine
+#f53240 bright coral
+#f9be02 golden
+#ffffff white
+#000000 black
+*/
+
+/***** Fonts ******/
+
+$serif: 'Slabo 27px', serif;
+$sans: 'Cabin', sans-serif;
+
+/***** Normalize ******/
+
+@import 'normalize';
+
+/***** Mixins ******/
