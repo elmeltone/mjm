@@ -398,31 +398,45 @@ p {
   margin: 0; }
 
 /***** Detail Styles ******/
-.masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
+.masthead, .bottomline {
   height: 30px;
   width: 100%;
   background: #DB5800;
-  color: #8EA106;
+  color: #FF9000;
   text-align: center; }
 
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+
 .page {
-  height: 80vh;
-  width: 100%; }
+  height: 90vh;
+  width: 100%;
+  position: relative; }
+
+.intro {
+  height: 80vh; }
 
 .pictionary, .apihack {
   background: #f2f2f2; }
 
-.container {
+.logo {
   width: 210px;
   margin: auto; }
+
+.container {
+  position: absolute;
+  height: 60vh;
+  width: 80vw;
+  margin: 15vh 10vw;
+  background: #F0C600; }
 
 .icon {
   margin-top: 18vh;
   height: 210px;
-  background: #FF9000; }
+  background: #F0C600; }
 
 .name, .title {
   width: 100%;
@@ -443,3 +457,7 @@ p {
 .title-text {
   letter-spacing: 6px;
   margin-left: 3px; }
+
+footer, .bottomline {
+  margin: 0;
+  padding: 0; }

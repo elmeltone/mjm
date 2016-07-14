@@ -55,35 +55,52 @@ p {
 
 /***** Detail Styles ******/
 
-.masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
+.masthead, .bottomline {
   height: 30px;
   width: 100%;
   background: $bold;
-  color: $complement;
+  color: $emphasis;
   text-align: center;
 }
 
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .page {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
+  position: relative;
+}
+
+.intro {
+  height: 80vh;
 }
 
 .pictionary, .apihack {
   background: darken($plain, 5%);
 }
 
-.container {
+.logo {
   width: 210px;
   margin: auto;
+}
+
+.container {
+  position: absolute;
+  height: 60vh;
+  width: 80vw;
+  margin: 15vh 10vw;
+  background: $anchor;
 }
 
 .icon {
   margin-top: 18vh;
   height: 210px;
-  background: $emphasis;
+  background: $anchor;
 }
 
 .name, .title {
@@ -109,4 +126,9 @@ p {
 .title-text {
   letter-spacing: 6px;
   margin-left: 3px;
+}
+
+footer, .bottomline {
+  margin: 0;
+  padding: 0;
 }
