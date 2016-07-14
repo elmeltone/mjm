@@ -30,6 +30,7 @@ $shadow: lighten(#000000, 15%);
 
 $serif: 'Arvo', serif;
 $sans: 'PT Sans', sans-serif;
+$pictionary: 'Slabo 27px', serif;
 
 /***** Normalize ******/
 
@@ -93,7 +94,7 @@ p {
   position: absolute;
   height: 60vh;
   width: 80vw;
-  margin: 15vh 10vw;
+  margin: 10vh 10vw;
   background: $anchor;
 }
 
@@ -126,6 +127,62 @@ p {
 .title-text {
   letter-spacing: 6px;
   margin-left: 3px;
+}
+
+.img {
+  height: 34%;
+  width: 30%;
+  background: $complement;
+  position: absolute;
+  top: 33%;
+  left: 10%;
+}
+
+.description {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  border-left: 1px solid $dark;
+}
+
+.proj-title {
+  font-size: 1.75rem;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.pic, .chat-words, .api, .learn {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.pic-title {
+  font-family: $pictionary;
+  letter-spacing: 2px;
+}
+
+.chat-title {
+  top: 20%;
+}
+
+.chat-words {
+  top: 40%;
+}
+
+.api-title {
+  font-family: $serif;
+}
+
+.learn-title {
+  top: 30%;
+}
+
+.learn {
+  top: 70%;
 }
 
 footer, .bottomline {

@@ -430,7 +430,7 @@ p {
   position: absolute;
   height: 60vh;
   width: 80vw;
-  margin: 15vh 10vw;
+  margin: 10vh 10vw;
   background: #F0C600; }
 
 .icon {
@@ -457,6 +457,52 @@ p {
 .title-text {
   letter-spacing: 6px;
   margin-left: 3px; }
+
+.img {
+  height: 34%;
+  width: 30%;
+  background: #8EA106;
+  position: absolute;
+  top: 33%;
+  left: 10%; }
+
+.description {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  border-left: 1px solid #59631E; }
+
+.proj-title {
+  font-size: 1.75rem;
+  position: absolute;
+  top: 15%;
+  left: 10%; }
+
+.pic, .chat-words, .api, .learn {
+  position: absolute;
+  top: 35%;
+  left: 10%; }
+
+.pic-title {
+  font-family: "Slabo 27px", serif;
+  letter-spacing: 2px; }
+
+.chat-title {
+  top: 20%; }
+
+.chat-words {
+  top: 40%; }
+
+.api-title {
+  font-family: "Arvo", serif; }
+
+.learn-title {
+  top: 30%; }
+
+.learn {
+  top: 70%; }
 
 footer, .bottomline {
   margin: 0;
