@@ -402,7 +402,7 @@ p {
   height: 30px;
   width: 100%;
   background: #DB5800;
-  color: #FF9000;
+  color: #F0C600;
   text-align: center; }
 
 .masthead {
@@ -410,6 +410,14 @@ p {
   top: 0;
   left: 0;
   z-index: 10; }
+
+.top {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 6px 0 0 0;
+  text-align: center; }
 
 .page {
   height: 90vh;
