@@ -90,13 +90,19 @@ p {
   height: 80vh;
 }
 
-.pictionary, .apihack {
-  background: darken($plain, 5%);
-}
-
 .logo {
   width: 210px;
   margin: auto;
+}
+
+.icon {
+  margin-top: 16vh;
+  height: 210px;
+  background: $anchor;
+}
+
+.pictionary, .apihack {
+  background: lighten($anchor, 40%);
 }
 
 .container {
@@ -104,13 +110,6 @@ p {
   height: 60vh;
   width: 80vw;
   margin: 10vh 10vw;
-  background: $anchor;
-}
-
-.icon {
-  margin-top: 12vh;
-  height: 210px;
-  background: $anchor;
 }
 
 .name, .title {
