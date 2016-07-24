@@ -2,8 +2,10 @@ var express = require('express');
 
 var App = express();
 
-App.get('/', function(request, response) {
-  response.send('This site is under construction. Please come back later :)');
+App.use(express.static(__dirname));
+
+App.get('*', function(req, res){
+  res.sendfile(__dirname + 'index.html');
 });
 
 App.listen((process.env.PORT || 8080));
