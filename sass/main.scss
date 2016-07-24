@@ -67,19 +67,12 @@ html, body {
   color: $dark;
 }
 
-i {
-  &:hover {
-    cursor: pointer;
-    text-shadow: 0 0 2px $emphasis;
-  }
-}
-
 a {
-  color: $bold;
+  color: $complement;
   text-decoration: none;
   &:hover {
     cursor: pointer;
-    text-shadow: 0 0 10px $anchor;
+    text-shadow: 0 0 6px $anchor;
   }
 }
 
@@ -91,6 +84,7 @@ p {
 /***** Detail Styles ******/
 
 .masthead, .bottomline {
+  position: absolute;
   height: 30px;
   width: 100%;
   color: $dark;
@@ -98,7 +92,6 @@ p {
 }
 
 .masthead {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -106,7 +99,7 @@ p {
 }
 
 .masthead.clicked .sites {
-  transform: translate(100%, 0);
+  transform: translate(110%, 0);
 }
 
 .top {
@@ -127,7 +120,7 @@ p {
 .sites {
   z-index: -1;
   width: 70%;
-  position: fixed;
+  position: absolute;
   left: -70%;
   transition: transform 300ms ease-in-out;
 }
@@ -142,13 +135,16 @@ p {
 }
 
 .page {
-  height: 30vh;
+  height: 79vh;
+  margin-top: 20vh;
   width: 100%;
   position: relative;
+  z-index: 2;
 }
 
 .intro {
-  height: 70vh;
+  padding-top: 5vh;
+  height: 74vh;
 }
 
 .logo {
@@ -178,7 +174,6 @@ p {
 }
 
 .name {
-  margin-top: 25vh;
   font-family: $serif;
   font-size: 2em;
 }
@@ -210,36 +205,63 @@ p {
 }
 
 .img {
-  height: 34%;
-  width: 30%;
+  height: 60%;
+  max-height: 480px;
+  width: 80%;
+  max-width: 500px;
+  margin: 5% auto;
+  padding: 0;
   background: $complement;
-  position: absolute;
-  top: 33%;
-  left: 10%;
+}
+
+.screen, .code {
+  float: left;
+  width: 44%;
+  height: 100%;
+  margin-top: 0;
+  margin-left: 4%;
+  padding: 0;
+  background: $anchor;
+  @include border-radius(20px);
+}
+
+.screen {
+  margin-left: 5.5%;
+}
+
+.code {
+  margin-left: 1%;
 }
 
 .description {
-  width: 40%;
-  height: 70%;
-  position: absolute;
-  top: 15%;
-  right: 15%;
-  border-left: 1px solid $dark;
+  width: 80%;
+  max-width: 500px;
+  height: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .proj-title {
   font-size: 1.75rem;
-  position: absolute;
-  top: 0;
-  left: 10%;
   color: $bold;
 }
 
 .pic, .chat-words, .api, .learn {
-  position: absolute;
-  top: 35%;
-  left: 10%;
   font-size: .75rem;
+}
+
+#pictionary-screen {
+  background: url('http://i.imgur.com/zX0b8U8.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#pictionary-code {
+  background: url('http://i.imgur.com/Nbm8jJE.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .pic-title {
@@ -247,12 +269,61 @@ p {
   letter-spacing: 2px;
 }
 
+#chat-screen {
+  background: url('http://i.imgur.com/9RxoEsT.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#chat-code {
+  background: url('http://i.imgur.com/RSVmp9O.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 .chat-words {
   top: 40%;
 }
 
+#locpics-screen {
+  background: url('http://i.imgur.com/xtqsYuv.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#locpics-code {
+  background: url('http://i.imgur.com/U0uCT3u.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 .api-title {
   font-family: $serif;
+}
+
+#shop-screen {
+  background: url('http://i.imgur.com/7sqplVg.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#shop-code {
+  background: url('http://i.imgur.com/22lociX.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#react-screen {
+  background: url('http://i.imgur.com/1lQFt1f.png');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .learning {
@@ -266,7 +337,6 @@ p {
 .bottomline {
   margin: 0;
   padding: 0;
-  position: fixed;
   bottom: 0;
   left: 0;
 }

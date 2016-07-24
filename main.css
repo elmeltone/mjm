@@ -2470,16 +2470,12 @@ html, body {
   font-size: 1em;
   color: #59631E; }
 
-i:hover {
-  cursor: pointer;
-  text-shadow: 0 0 2px #FF9000; }
-
 a {
-  color: #DB5800;
+  color: #8EA106;
   text-decoration: none; }
   a:hover {
     cursor: pointer;
-    text-shadow: 0 0 10px #F0C600; }
+    text-shadow: 0 0 6px #F0C600; }
 
 p {
   margin: 0;
@@ -2487,20 +2483,20 @@ p {
 
 /***** Detail Styles ******/
 .masthead, .bottomline {
+  position: absolute;
   height: 30px;
   width: 100%;
   color: #59631E;
   text-align: center; }
 
 .masthead {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   font-size: 1.5rem; }
 
 .masthead.clicked .sites {
-  transform: translate(100%, 0); }
+  transform: translate(110%, 0); }
 
 .top {
   float: left;
@@ -2518,7 +2514,7 @@ p {
 .sites {
   z-index: -1;
   width: 70%;
-  position: fixed;
+  position: absolute;
   left: -70%;
   transition: transform 300ms ease-in-out; }
 
@@ -2530,12 +2526,15 @@ p {
   right: 0; }
 
 .page {
-  height: 30vh;
+  height: 79vh;
+  margin-top: 20vh;
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .intro {
-  height: 70vh; }
+  padding-top: 5vh;
+  height: 74vh; }
 
 .logo {
   width: 210px;
@@ -2560,7 +2559,6 @@ p {
   text-align-last: start; }
 
 .name {
-  margin-top: 25vh;
   font-family: "Arvo", serif;
   font-size: 2em; }
 
@@ -2587,43 +2585,110 @@ p {
   background: #ffffff; }
 
 .img {
-  height: 34%;
-  width: 30%;
-  background: #8EA106;
-  position: absolute;
-  top: 33%;
-  left: 10%; }
+  height: 60%;
+  max-height: 480px;
+  width: 80%;
+  max-width: 500px;
+  margin: 5% auto;
+  padding: 0;
+  background: #8EA106; }
+
+.screen, .code {
+  float: left;
+  width: 44%;
+  height: 100%;
+  margin-top: 0;
+  margin-left: 4%;
+  padding: 0;
+  background: #F0C600;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+.screen {
+  margin-left: 5.5%; }
+
+.code {
+  margin-left: 1%; }
 
 .description {
-  width: 40%;
-  height: 70%;
-  position: absolute;
-  top: 15%;
-  right: 15%;
-  border-left: 1px solid #59631E; }
+  width: 80%;
+  max-width: 500px;
+  height: 60%;
+  margin: 0 auto;
+  text-align: center; }
 
 .proj-title {
   font-size: 1.75rem;
-  position: absolute;
-  top: 0;
-  left: 10%;
   color: #DB5800; }
 
 .pic, .chat-words, .api, .learn {
-  position: absolute;
-  top: 35%;
-  left: 10%;
   font-size: .75rem; }
+
+#pictionary-screen {
+  background: url("http://i.imgur.com/zX0b8U8.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+#pictionary-code {
+  background: url("http://i.imgur.com/Nbm8jJE.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
 
 .pic-title {
   font-family: "Slabo 27px", serif;
   letter-spacing: 2px; }
 
+#chat-screen {
+  background: url("http://i.imgur.com/9RxoEsT.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+#chat-code {
+  background: url("http://i.imgur.com/RSVmp9O.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
 .chat-words {
   top: 40%; }
 
+#locpics-screen {
+  background: url("http://i.imgur.com/xtqsYuv.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+#locpics-code {
+  background: url("http://i.imgur.com/U0uCT3u.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
 .api-title {
   font-family: "Arvo", serif; }
+
+#shop-screen {
+  background: url("http://i.imgur.com/7sqplVg.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+#shop-code {
+  background: url("http://i.imgur.com/22lociX.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+#react-screen {
+  background: url("http://i.imgur.com/1lQFt1f.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat; }
 
 .learning {
   margin-bottom: 30px; }
@@ -2634,6 +2699,5 @@ p {
 .bottomline {
   margin: 0;
   padding: 0;
-  position: fixed;
   bottom: 0;
   left: 0; }
