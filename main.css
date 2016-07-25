@@ -2496,11 +2496,11 @@ p {
   font-size: 1.5rem; }
 
 .masthead.clicked .sites {
-  transform: translate(110%, 0); }
+  transform: translate(100%, 0); }
 
 .top {
   float: left;
-  width: 10%;
+  width: 8%;
   height: 100%;
   margin: 10px 0 0 0;
   padding: 0;
@@ -2513,9 +2513,9 @@ p {
 
 .sites {
   z-index: -1;
-  width: 70%;
+  width: 100%;
   position: absolute;
-  left: -70%;
+  left: -100%;
   transition: transform 300ms ease-in-out; }
 
 .fa {
@@ -2526,14 +2526,14 @@ p {
   right: 0; }
 
 .page {
-  height: 79vh;
-  margin-top: 20vh;
+  height: 99vh;
+  margin-top: 0;
   width: 100%;
   position: relative;
   z-index: 2; }
 
 .intro {
-  padding-top: 5vh;
+  padding-top: 25vh;
   height: 74vh; }
 
 .logo {
@@ -2547,10 +2547,10 @@ p {
   background: #F0C600; }
 
 .container {
-  position: absolute;
   height: 100%;
-  width: 100%;
-  margin: auto; }
+  width: 244px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .name, .title {
   width: 100%;
@@ -2586,8 +2586,7 @@ p {
 .img {
   width: 300px;
   margin: auto;
-  padding: 0;
-  border: 1px solid #8EA106; }
+  padding-top: 30vh; }
 
 .screen, .code {
   float: left;
@@ -2600,11 +2599,15 @@ p {
   -ms-border-radius: 20px;
   border-radius: 20px; }
 
+.code {
+  margin-left: 4px; }
+
 .description {
+  clear: both;
   width: 80%;
   max-width: 500px;
-  height: 60%;
   margin: 0 auto;
+  padding-top: 24px;
   text-align: center; }
 
 .proj-title {
@@ -2614,53 +2617,11 @@ p {
 .text {
   font-size: .75rem; }
 
-#pictionary-code {
-  background: url("http://i.imgur.com/Nbm8jJE.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#chat-screen {
-  background: url("http://i.imgur.com/9RxoEsT.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#chat-code {
-  background: url("http://i.imgur.com/RSVmp9O.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#locpics-screen {
-  background: url("http://i.imgur.com/xtqsYuv.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#locpics-code {
-  background: url("http://i.imgur.com/U0uCT3u.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#shop-screen {
-  background: url("http://i.imgur.com/7sqplVg.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
-#shop-code {
-  background: url("http://i.imgur.com/22lociX.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
-
 #react-screen {
-  background: url("http://i.imgur.com/1lQFt1f.png");
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat; }
+  clear: both;
+  float: none;
+  height: 120px;
+  padding-left: 60px; }
 
 .learning {
   margin-bottom: 30px; }
