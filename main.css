@@ -2526,7 +2526,7 @@ p {
   right: 0; }
 
 .page {
-  height: 99vh;
+  height: 100vh;
   margin-top: 0;
   width: 100%;
   position: relative;
@@ -2534,7 +2534,26 @@ p {
 
 .intro {
   padding-top: 25vh;
-  height: 74vh; }
+  height: 75vh; }
+
+.pictionary {
+  background: #1afdd7;
+  color: #f53240; }
+
+.chat {
+  background: #385cc7;
+  color: #00c5cd; }
+
+.apihack {
+  background: #ECF0F1;
+  color: #2980B9; }
+
+.shoppinglist {
+  background: #CDE855;
+  color: #493F0B; }
+
+.learning {
+  color: #00d8ff; }
 
 .logo {
   width: 210px;
@@ -2586,7 +2605,7 @@ p {
 .img {
   width: 300px;
   margin: auto;
-  padding-top: 30vh; }
+  padding-top: 20vh; }
 
 .screen, .code {
   float: left;
@@ -2614,9 +2633,6 @@ p {
   font-size: 1.75rem;
   color: #DB5800; }
 
-.text {
-  font-size: .75rem; }
-
 #react-screen {
   clear: both;
   float: none;
@@ -2629,8 +2645,11 @@ p {
 .learn {
   top: 70%; }
 
-.activity {
-  text-decoration: underline; }
+#activity {
+  text-decoration: underline;
+  color: #00d8ff; }
+  #activity:hover {
+    text-shadow: 0 0 1px #27408b; }
 
 .bottomline {
   margin: 0;

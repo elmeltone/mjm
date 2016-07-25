@@ -16,6 +16,16 @@ $dark: #59631E;
 $plain: #ffffff;
 $shadow: lighten(#000000, 15%);
 
+$pictionary-back: #02c8a7;
+$pictionary-text: #f53240;
+$thechat-back: #27408b;
+$thechat-text: #00c5cd;
+$api-back: #ECF0F1;
+$api-text: #2980B9;
+$shop-back: #CDE855;
+$shop-text: #493F0B;
+$react-text: #00d8ff;
+
 /* ---
 #DB5800 burnt orange
 #FF9000 orange pulp
@@ -135,7 +145,7 @@ p {
 }
 
 .page {
-  height: 99vh;
+  height: 100vh;
   margin-top: 0;
   width: 100%;
   position: relative;
@@ -144,7 +154,31 @@ p {
 
 .intro {
   padding-top: 25vh;
-  height: 74vh;
+  height: 75vh;
+}
+
+.pictionary {
+  background: lighten($pictionary-back, 15%);
+  color: $pictionary-text;
+}
+
+.chat {
+  background: lighten($thechat-back, 15%);
+  color: $thechat-text;
+}
+
+.apihack {
+  background: $api-back;
+  color: $api-text;
+}
+
+.shoppinglist {
+  background: $shop-back;
+  color: $shop-text;
+}
+
+.learning {
+  color: #00d8ff;
 }
 
 .logo {
@@ -206,7 +240,7 @@ p {
 .img {
   width: 300px;
   margin: auto;
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .screen, .code {
@@ -241,7 +275,6 @@ p {
 }
 
 .text {
-  font-size: .75rem;
 }
 
 #react-screen {
@@ -259,8 +292,12 @@ p {
   top: 70%;
 }
 
-.activity {
+#activity {
   text-decoration: underline;
+  color: #00d8ff;
+  &:hover {
+    text-shadow: 0 0 1px $thechat-back;
+  }
 }
 
 .bottomline {
