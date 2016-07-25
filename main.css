@@ -2483,16 +2483,16 @@ p {
 
 /***** Detail Styles ******/
 .masthead, .bottomline {
-  position: absolute;
-  height: 30px;
   width: 100%;
   color: #59631E;
   text-align: center; }
 
 .masthead {
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
+  height: 30px;
   font-size: 1.5rem; }
 
 .masthead.clicked .sites {
@@ -2535,6 +2535,11 @@ p {
 .intro {
   padding-top: 25vh;
   height: 75vh; }
+
+#hello {
+  width: 210px;
+  margin: 12px auto;
+  text-align: center; }
 
 .pictionary {
   background: #1afdd7;
@@ -2652,7 +2657,55 @@ p {
     text-shadow: 0 0 1px #27408b; }
 
 .bottomline {
+  background: #8EA106;
   margin: 0;
   padding: 0;
-  bottom: 0;
-  left: 0; }
+  height: 20px; }
+
+#smile {
+  width: 5%; }
+
+/***** Media Queries ******/
+@media screen and (min-width: 401px) {
+  .container {
+    height: 100%;
+    width: 100%; }
+  .img {
+    width: 340px;
+    padding-top: 20vh; }
+  .screen, .code {
+    width: 160px;
+    height: 240px;
+    margin-left: 8px; }
+  .code {
+    margin-left: 4px; }
+  .description {
+    width: 80%;
+    max-width: 500px;
+    padding-top: 24px; }
+  #react-screen {
+    width: 160px;
+    height: 160px;
+    padding-left: 90px; } }
+
+@media screen and (min-width: 751px) {
+  .container {
+    height: 100%;
+    width: 100%; }
+  .img {
+    width: 680px;
+    padding-top: 20vh; }
+  .screen, .code {
+    width: 320px;
+    height: 480px;
+    margin-left: 18px; }
+  .code {
+    margin-left: 4px; }
+  .description {
+    width: 80%;
+    max-width: 500px;
+    padding-top: 24px; }
+  #react-screen {
+    width: 320px;
+    height: 320px;
+    padding-left: 180px; } }
