@@ -2468,14 +2468,14 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 1em;
-  color: #8EA106; }
+  color: #59631E; }
 
 a {
-  color: #8EA106;
+  color: #59631E;
   text-decoration: none; }
   a:hover {
     cursor: pointer;
-    text-shadow: 0 0 6px #F0C600; }
+    text-shadow: 0 0 4px #F0C600; }
 
 p {
   margin: 0;
@@ -2484,15 +2484,14 @@ p {
 /***** Detail Styles ******/
 .masthead, .bottomline {
   width: 100%;
-  color: #59631E;
-  text-align: center; }
+  text-align: center;
+  background: #8EA106; }
 
 .masthead {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  height: 30px;
   font-size: 1.5rem; }
 
 .masthead.clicked .sites {
@@ -2509,7 +2508,7 @@ p {
   text-align: center; }
 
 .burger {
-  background: #ffffff; }
+  background: #8EA106; }
 
 .sites {
   z-index: -1;
@@ -2526,7 +2525,7 @@ p {
   right: 0; }
 
 .page {
-  height: 100vh;
+  height: 80vh;
   margin-top: 0;
   width: 100%;
   position: relative;
@@ -2563,8 +2562,11 @@ p {
 .logo {
   width: 210px;
   margin: auto;
-  background: #8EA106;
-  color: #F0C600; }
+  background: #7c8a2a;
+  color: #F0C600;
+  -webkit-box-shadow: 0 8px 6px -4px #737373;
+  -moz-box-shadow: 0 8px 6px -4px #737373;
+  box-shadow: 0 8px 6px -4px #737373; }
 
 .icon {
   height: 210px;
@@ -2621,7 +2623,10 @@ p {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  -webkit-box-shadow: 0 14px 8px -8px #737373;
+  -moz-box-shadow: 0 14px 8px -8px #737373;
+  box-shadow: 0 14px 8px -8px #737373; }
 
 .code {
   margin-left: 4px; }
@@ -2657,7 +2662,6 @@ p {
     text-shadow: 0 0 1px #27408b; }
 
 .bottomline {
-  background: #8EA106;
   margin: 0;
   padding: 0;
   height: 20px; }
@@ -2688,17 +2692,18 @@ p {
     height: 160px;
     padding-left: 90px; } }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 1051px) {
   .container {
     height: 100%;
     width: 100%; }
   .img {
-    width: 680px;
-    padding-top: 20vh; }
+    width: 500px;
+    padding-top: 5vh; }
   .screen, .code {
-    width: 320px;
-    height: 480px;
-    margin-left: 18px; }
+    width: 240px;
+    height: 360px; }
+  .screen {
+    margin-left: 6px; }
   .code {
     margin-left: 4px; }
   .description {
