@@ -20,9 +20,9 @@ $pictionary-back: #02c8a7;
 $pictionary-text: #f53240;
 $thechat-back: #27408b;
 $thechat-text: #00c5cd;
-$api-back: #ECF0F1;
+$api-back: #E74C3C;
 $api-text: #2980B9;
-$shop-back: #CDE855;
+$shop-back: #85DB18;
 $shop-text: #493F0B;
 $react-text: #00d8ff;
 
@@ -108,11 +108,10 @@ p {
 .masthead, .bottomline {
   width: 100%;
   text-align: center;
-  background: $complement;
 }
 
 .masthead {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -135,7 +134,11 @@ p {
 }
 
 .burger {
-  background: $complement;
+  background: $plain;
+}
+
+#arrow {
+  color: darken($emphasis, 5%);
 }
 
 .sites {
@@ -161,6 +164,7 @@ p {
   width: 100%;
   position: relative;
   z-index: 2;
+  color: darken($complement, 5%);
 }
 
 .intro {
@@ -172,30 +176,6 @@ p {
   width: 210px;
   margin: 12px auto;
   text-align: center;
-}
-
-.pictionary {
-  background: lighten($pictionary-back, 15%);
-  color: $pictionary-text;
-}
-
-.chat {
-  background: lighten($thechat-back, 15%);
-  color: $thechat-text;
-}
-
-.apihack {
-  background: $api-back;
-  color: $api-text;
-}
-
-.shoppinglist {
-  background: $shop-back;
-  color: $shop-text;
-}
-
-.learning {
-  color: #00d8ff;
 }
 
 .logo {
@@ -240,6 +220,14 @@ p {
   margin-left: 1px;
 }
 
+.text {
+  margin-top: 16px;
+}
+
+#projects-intro {
+  margin-top: 32px;
+}
+
 .title-text, .proj-transition {
   letter-spacing: 5px;
   margin-left: 6px;
@@ -255,6 +243,10 @@ p {
   background: $plain;
 }
 
+.pictionary {
+  text-align: center;
+}
+
 .img {
   width: 300px;
   margin: auto;
@@ -263,16 +255,13 @@ p {
 
 .screen, .code {
   float: left;
-  width: 120px;
-  height: 180px;
+  width: 116px;
+  height: 176px;
   padding: 0;
   background: $anchor;
+  border: 2px solid $complement;
   @include border-radius(20px);
   @include box-shadow(0, 14px, 8px, -8px, lighten($shadow, 30%));
-}
-
-.screen {
-
 }
 
 .code {
@@ -293,14 +282,12 @@ p {
   color: $bold;
 }
 
-.text {
-}
-
 #react-screen {
   clear: both;
   float: none;
   height: 120px;
-  padding-left: 60px;
+  margin-left: 60px;
+  @include box-shadow(0, 16px, 16px, -20px, lighten($shadow, 30%));
 }
 
 .learning {
@@ -313,7 +300,7 @@ p {
 
 #activity {
   text-decoration: underline;
-  color: #00d8ff;
+  color: darken($emphasis, 5%);
   &:hover {
     text-shadow: 0 0 1px $thechat-back;
   }
@@ -323,6 +310,7 @@ p {
   margin: 0;
   padding: 0;
   height: 20px;
+  background: $complement;
 }
 
 #smile {
@@ -361,7 +349,8 @@ p {
   #react-screen {
     width: 160px;
     height: 160px;
-    padding-left: 90px;
+    margin-left: 90px;
+    padding-left: 0;
   }
 }
 
@@ -377,8 +366,8 @@ p {
     padding-top: 5vh;
   }
   .screen, .code {
-    width: 240px;
-    height: 360px;
+    width: 236px;
+    height: 356px;
   }
 
   .screen {
@@ -398,6 +387,8 @@ p {
   #react-screen {
     width: 320px;
     height: 320px;
-    padding-left: 180px;
+    margin-left: 90px;
+    padding-left: 0;
+    @include box-shadow(0, 18px, 16px, -24px, lighten($shadow, 30%));
   }
 }
