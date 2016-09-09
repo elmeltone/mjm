@@ -21,7 +21,9 @@
   "homepage": "https://github.com/elmeltone/mjm#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "node-sass": "3.9.3",
+    "nodemon": "1.10.2"
   },
   "devDependencies": {
     "node-sass": "^3.8.0",

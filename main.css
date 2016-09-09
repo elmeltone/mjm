@@ -2535,22 +2535,18 @@ p {
   color: #788805; }
 
 .intro {
-  padding-top: 25vh;
+  padding-top: 12vh;
   height: 75vh; }
 
-#hello {
-  width: 210px;
-  margin: 12px auto;
-  text-align: center; }
+#hello, .stack {
+  margin: 8px 16px 0 16px; }
 
 .logo {
-  width: 210px;
+  width: 100%;
   margin: auto;
   background: #7c8a2a;
   color: #F0C600;
-  -webkit-box-shadow: 0 8px 6px -4px #737373;
-  -moz-box-shadow: 0 8px 6px -4px #737373;
-  box-shadow: 0 8px 6px -4px #737373; }
+  padding-left: 16px; }
 
 .icon {
   height: 210px;
@@ -2579,9 +2575,6 @@ p {
 .lastname {
   letter-spacing: 12px;
   margin-left: 1px; }
-
-.text {
-  margin-top: 16px; }
 
 #projects-intro {
   margin-top: 32px; }
