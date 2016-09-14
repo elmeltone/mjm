@@ -8,18 +8,18 @@ MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 
 /***** Colors ******/
-$dark: #2C3E50 /* dark blue */ ;
-$emphasis: #E74C3C /* red */ ;
-$background: #ECF0F1 /* white */ ;
-$complement: #3498DB /* light blue */ ;
-$anchor: #2980B9 /* faded blue */ ;
+/* $dark: #2C3E50 dark blue */ ;
+/* $emphasis: #E74C3C red */ ;
+/* $background: #ECF0F1 white */ ;
+/* $complement: #3498DB light blue */ ;
+/* $anchor: #2980B9 faded blue */ ;
 
 /* Alternate Colors */
-/* $dark: #5F5448 brown */ ;
-/* $emphasis: #F24C27 blood orange */ ;
-/* $background: #FFFFFA white */ ;
-/* $complement: #037E8C light sea */ ;
-/* $anchor: #024959 dark sea */ ;
+$dark: #5F5448 /* brown */ ;
+$emphasis: #F24C27 /* blood orange */ ;
+$background: #FFFFFA /* white */ ;
+$complement: #037E8C /* light sea */ ;
+$anchor: #024959 /* dark sea */ ;
 
 /* Archive Colors */
 $pictionary-back: #02c8a7;
@@ -101,6 +101,11 @@ p {
   padding: 0;
 }
 
+button {
+  background-color: $emphasis;
+  color: $background;
+}
+
 /***** Detail Styles ******/
 
 .wrapper {
@@ -132,6 +137,31 @@ p {
 
 .explore {
   background: $anchor;
+}
+
+.intro {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+
+.headline {
+  color: $anchor;
+}
+
+.subtitle {
+  color: $complement;
+}
+
+.archive {
+  height: 300px;
+  background-image: url(http://i.imgur.com/h0MroIU.jpg);
+  background-size: cover;
+}
+
+.linkbox {
+  height: 100px;
 }
 
 @media screen and (max-width: 400px) {

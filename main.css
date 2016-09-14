@@ -8,17 +8,17 @@ Tags: Website, Portfolio, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pi
 MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 /***** Colors ******/
-/* dark blue */
-/* red */
-/* white */
-/* light blue */
-/* faded blue */
+/* $dark: #2C3E50 dark blue */
+/* $emphasis: #E74C3C red */
+/* $background: #ECF0F1 white */
+/* $complement: #3498DB light blue */
+/* $anchor: #2980B9 faded blue */
 /* Alternate Colors */
-/* $dark: #5F5448 brown */
-/* $emphasis: #F24C27 blood orange */
-/* $background: #FFFFFA white */
-/* $complement: #037E8C light sea */
-/* $anchor: #024959 dark sea */
+/* brown */
+/* blood orange */
+/* white */
+/* light sea */
+/* dark sea */
 /* Archive Colors */
 /***** Fonts ******/
 /***** Normalize ******/
@@ -2469,30 +2469,34 @@ textarea {
 html, body {
   font-family: sans-serif;
   font-size: 1em;
-  color: #3498DB;
-  background: #ECF0F1; }
+  color: #037E8C;
+  background: #FFFFFA; }
 
 html, body, div, h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0; }
 
 a {
-  color: #2980B9; }
+  color: #024959; }
   a:hover {
     cursor: pointer;
-    text-shadow: 0 0 4px #3498DB; }
+    text-shadow: 0 0 4px #037E8C; }
 
 p {
   margin: 0;
   padding: 0; }
+
+button {
+  background-color: #F24C27;
+  color: #FFFFFA; }
 
 /***** Detail Styles ******/
 .wrapper {
   width: 100%; }
 
 .masthead {
-  background: #2C3E50;
-  color: #ECF0F1; }
+  background: #5F5448;
+  color: #FFFFFA; }
 
 .title {
   margin-left: 16px; }
@@ -2500,16 +2504,36 @@ p {
 .top {
   float: right;
   text-align: center;
-  color: #ECF0F1; }
+  color: #FFFFFA; }
 
 .collaborate {
-  background: #3498DB; }
+  background: #037E8C; }
 
 .quote {
-  background: #E74C3C; }
+  background: #F24C27; }
 
 .explore {
-  background: #2980B9; }
+  background: #024959; }
+
+.intro {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 16px; }
+
+.headline {
+  color: #024959; }
+
+.subtitle {
+  color: #037E8C; }
+
+.archive {
+  height: 300px;
+  background-image: url(http://i.imgur.com/h0MroIU.jpg);
+  background-size: cover; }
+
+.linkbox {
+  height: 100px; }
 
 @media screen and (max-width: 400px) {
   .top {
