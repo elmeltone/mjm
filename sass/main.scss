@@ -104,12 +104,14 @@ p {
 button {
   background-color: $emphasis;
   color: $background;
+  @include border-radius(8px);
+  border: 2px solid darken($emphasis, 15%);
 }
 
 /***** Detail Styles ******/
 
 .wrapper {
-  width: 100%;
+  padding: 0;
 }
 
 .masthead {
@@ -125,6 +127,7 @@ button {
   float: right;
   text-align: center;
   color: $background;
+  font-size: 12px;
 }
 
 .collaborate {
@@ -140,13 +143,20 @@ button {
 }
 
 .intro {
-  height: 200px;
-  width: 100%;
+  clear: both;
+  max-height: 200px;
+  max-width: 320px;
   text-align: center;
-  padding: 16px;
+  margin: 16px auto;
+}
+
+.headline, .subtitle, button {
+  max-width: 80%;
+  margin: 2px auto;
 }
 
 .headline {
+  margin-top: 48px;
   color: $anchor;
 }
 

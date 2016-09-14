@@ -2488,11 +2488,16 @@ p {
 
 button {
   background-color: #F24C27;
-  color: #FFFFFA; }
+  color: #FFFFFA;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #c12d0c; }
 
 /***** Detail Styles ******/
 .wrapper {
-  width: 100%; }
+  padding: 0; }
 
 .masthead {
   background: #5F5448;
@@ -2504,7 +2509,8 @@ button {
 .top {
   float: right;
   text-align: center;
-  color: #FFFFFA; }
+  color: #FFFFFA;
+  font-size: 12px; }
 
 .collaborate {
   background: #037E8C; }
@@ -2516,12 +2522,18 @@ button {
   background: #024959; }
 
 .intro {
-  height: 200px;
-  width: 100%;
+  clear: both;
+  max-height: 200px;
+  max-width: 320px;
   text-align: center;
-  padding: 16px; }
+  margin: 16px auto; }
+
+.headline, .subtitle, button {
+  max-width: 80%;
+  margin: 2px auto; }
 
 .headline {
+  margin-top: 48px;
   color: #024959; }
 
 .subtitle {
