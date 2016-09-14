@@ -34,8 +34,12 @@ $react-text: #00d8ff;
 
 /***** Fonts ******/
 
-$serif: serif;
-$sans: sans-serif;
+@font-face {
+  font-family: 'Monofred-Ultralight';
+  src: url('fonts/Monofred-Ultralight.ttf');
+}
+$light: 'Monofred-Ultralight', sans-serif;
+$sans: Futura,Trebuchet MS,Arial,sans-serif;
 
 /***** Normalize ******/
 
@@ -88,6 +92,12 @@ html, body, div, h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+a, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 a {
   color: $anchor;
   &:hover {
@@ -104,8 +114,14 @@ p {
 button {
   background-color: $emphasis;
   color: $background;
-  @include border-radius(8px);
-  border: 2px solid darken($emphasis, 15%);
+  @include border-radius(4px);
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /***** Detail Styles ******/
@@ -121,6 +137,10 @@ button {
 
 .title {
   margin-left: 16px;
+}
+
+.position, .subtitle, button {
+  font-family: $light;
 }
 
 .top {
@@ -172,6 +192,7 @@ button {
 
 .linkbox {
   height: 100px;
+  padding: 16px;
 }
 
 @media screen and (max-width: 400px) {

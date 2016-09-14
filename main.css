@@ -21,6 +21,10 @@ MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 /* dark sea */
 /* Archive Colors */
 /***** Fonts ******/
+@font-face {
+  font-family: 'Monofred-Ultralight';
+  src: url("fonts/Monofred-Ultralight.ttf"); }
+
 /***** Normalize ******/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2467,7 +2471,7 @@ textarea {
 /***** Mixins & Keyframes ******/
 /***** General Styles ******/
 html, body {
-  font-family: sans-serif;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
   font-size: 1em;
   color: #037E8C;
   background: #FFFFFA; }
@@ -2475,6 +2479,9 @@ html, body {
 html, body, div, h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0; }
+
+a:hover, button:hover {
+  cursor: pointer; }
 
 a {
   color: #024959; }
@@ -2489,11 +2496,16 @@ p {
 button {
   background-color: #F24C27;
   color: #FFFFFA;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  border: 2px solid #c12d0c; }
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 /***** Detail Styles ******/
 .wrapper {
@@ -2505,6 +2517,9 @@ button {
 
 .title {
   margin-left: 16px; }
+
+.position, .subtitle, button {
+  font-family: "Monofred-Ultralight", sans-serif; }
 
 .top {
   float: right;
@@ -2545,7 +2560,8 @@ button {
   background-size: cover; }
 
 .linkbox {
-  height: 100px; }
+  height: 100px;
+  padding: 16px; }
 
 @media screen and (max-width: 400px) {
   .top {
