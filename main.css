@@ -25,6 +25,10 @@ MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
   font-family: 'Monofred-Ultralight';
   src: url("fonts/Monofred-Ultralight.ttf"); }
 
+@font-face {
+  font-family: 'Tex Gyre Adventor';
+  src: url("fonts/texgyreadventor-regular.otf"); }
+
 /***** Normalize ******/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2518,7 +2522,7 @@ ul {
 .title {
   margin-left: 16px; }
 
-.position, .subtitle, button {
+.position, .subtitle {
   font-family: "Monofred-Ultralight", sans-serif; }
 
 .top {
@@ -2549,10 +2553,18 @@ ul {
 
 .headline {
   margin-top: 48px;
-  color: #024959; }
+  color: #024959;
+  line-height: 36px;
+  margin-bottom: 8px;
+  font-family: "Tex Gyre Adventor", sans-serif; }
 
 .subtitle {
-  color: #037E8C; }
+  color: #037E8C;
+  margin-bottom: 16px;
+  font-size: 14px; }
+
+.action {
+  margin-bottom: 16px; }
 
 .archive {
   height: 300px;

@@ -38,8 +38,13 @@ $react-text: #00d8ff;
   font-family: 'Monofred-Ultralight';
   src: url('fonts/Monofred-Ultralight.ttf');
 }
+@font-face {
+  font-family: 'Tex Gyre Adventor';
+  src: url('fonts/texgyreadventor-regular.otf');
+}
 $light: 'Monofred-Ultralight', sans-serif;
 $sans: Futura,Trebuchet MS,Arial,sans-serif;
+$alternate: 'Tex Gyre Adventor', sans-serif;
 
 /***** Normalize ******/
 
@@ -139,7 +144,7 @@ ul {
   margin-left: 16px;
 }
 
-.position, .subtitle, button {
+.position, .subtitle{
   font-family: $light;
 }
 
@@ -178,10 +183,19 @@ ul {
 .headline {
   margin-top: 48px;
   color: $anchor;
+  line-height: 36px;
+  margin-bottom: 8px;
+  font-family: $alternate;
 }
 
 .subtitle {
   color: $complement;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.action {
+  margin-bottom: 16px;
 }
 
 .archive {
