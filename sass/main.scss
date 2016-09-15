@@ -90,6 +90,9 @@ html, body {
   font-size: 1em;
   color: $complement;
   background: $background;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 html, body, div, h1, h2, h3, h4, h5, p {
@@ -211,7 +214,7 @@ ul {
 }
 
 .archive {
-  height: 300px;
+  height: 320px;
   background-image: url(http://i.imgur.com/h0MroIU.jpg);
   background-size: cover;
 }
