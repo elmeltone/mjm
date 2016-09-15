@@ -2517,19 +2517,29 @@ ul {
 
 .masthead {
   background: #5F5448;
-  color: #FFFFFA; }
+  color: #FFFFFA;
+  padding-bottom: 8px;
+  text-align: center; }
 
 .title {
-  margin-left: 16px; }
+  margin-left: auto;
+  margin-right: auto; }
+
+.name {
+  font-size: 20px; }
 
 .position, .subtitle {
   font-family: "Monofred-Ultralight", sans-serif; }
+
+.position {
+  font-size: 18px; }
 
 .top {
   float: right;
   text-align: center;
   color: #FFFFFA;
-  font-size: 12px; }
+  font-size: 12px;
+  margin-top: 4px; }
 
 .collaborate {
   background: #037E8C; }
