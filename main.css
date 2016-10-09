@@ -2482,7 +2482,7 @@ a:hover, button:hover {
   cursor: pointer; }
 
 a {
-  color: #85ceea; }
+  color: #333333; }
   a:hover {
     cursor: pointer;
     text-shadow: 0 0 4px #EFE034; }
@@ -2499,6 +2499,8 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
   border: none; }
+  button:hover {
+    box-shadow: 0 0 12px #EFE034; }
 
 ul {
   list-style-type: none;
