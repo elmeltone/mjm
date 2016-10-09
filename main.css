@@ -2493,7 +2493,7 @@ p {
 
 button {
   background-color: #EFE034;
-  color: #FFFFFF;
+  color: #333333;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2515,16 +2515,24 @@ ul {
 
 .masthead {
   background: #85ceea;
-  color: #FFFFFF;
+  color: #333333;
   height: 64px;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #000000; }
 
 .title {
-  color: #333333;
   padding-left: 8px; }
 
-.title {
+.title, .options {
   line-height: 64px; }
+
+.options-wrapper {
+  margin: 0 48px 0 0;
+  padding: 0; }
+
+.options {
+  text-decoration: underline;
+  margin: 0 8px; }
 
 .position, .subtitle {
   font-family: "Monofred-Ultralight", sans-serif; }
@@ -2539,36 +2547,39 @@ ul {
   float: right;
   height: 64px; }
 
+.shade {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 .intro {
   clear: both;
-  max-height: 200px;
-  max-width: 320px;
   text-align: center;
-  margin: 16px auto; }
+  margin: 0 auto;
+  height: 320px;
+  background-image: url(http://i.imgur.com/UBxSXBk.jpg);
+  background-size: cover; }
 
 .headline, .subtitle, button {
   max-width: 80%;
-  margin: 2px auto; }
+  margin: 0 auto; }
 
 .headline {
-  margin-top: 48px;
-  color: #EFE034;
+  color: #FFFFFF;
   line-height: 36px;
+  padding-top: 120px;
   margin-bottom: 8px;
   font-family: "Tex Gyre Adventor", sans-serif; }
 
 .subtitle {
-  color: #333333;
+  color: #FFFFFF;
   margin-bottom: 16px;
   font-size: 14px; }
 
 .action {
   margin-bottom: 16px; }
-
-.archive {
-  height: 320px;
-  background-image: url(http://i.imgur.com/h0MroIU.jpg);
-  background-size: cover; }
 
 .linkbox {
   height: 100px;
