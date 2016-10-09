@@ -1,25 +1,18 @@
 /*
 Theme Name: Portfolio
-Description: JavaScript web development portfolio
-Author: Michael J Melton <michael@MeltWebs.com>
+Description: SEO & JavaScript Solutions for the Modern Web
+Author: Michael J Melton <michael@meltwebs.com>
 Author URI: http://MeltWebs.com
-Tags: Website, Portfolio, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
+Tags: Website, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
 MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 
 /***** Colors ******/
-/* $dark: #2C3E50 dark blue */ ;
-/* $emphasis: #E74C3C red */ ;
-/* $background: #ECF0F1 white */ ;
-/* $complement: #3498DB light blue */ ;
-/* $anchor: #2980B9 faded blue */ ;
-
-/* Alternate Colors */
-$dark: #5F5448 /* brown */ ;
-$emphasis: #F24C27 /* blood orange */ ;
-$background: #FFFFFA /* white */ ;
-$complement: #037E8C /* light sea */ ;
-$anchor: #024959 /* dark sea */ ;
+$anchor: #85ceea /* sky blue */ ;
+$emphasis: #EFE034/* sunshine */ ;
+$dark: #333333 /* charcoal */ ;
+$black: #000000 /* black */ ;
+$white: #FFFFFF /* white */ ;
 
 /* Archive Colors */
 $pictionary-back: #02c8a7;
@@ -88,8 +81,6 @@ $alternate: 'Tex Gyre Adventor', sans-serif;
 html, body {
   font-family: $sans;
   font-size: 1em;
-  color: $complement;
-  background: $background;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -110,7 +101,7 @@ a {
   color: $anchor;
   &:hover {
     cursor: pointer;
-    text-shadow: 0 0 4px $complement;
+    text-shadow: 0 0 4px $emphasis;
   }
 }
 
@@ -121,7 +112,7 @@ p {
 
 button {
   background-color: $emphasis;
-  color: $background;
+  color: $white;
   @include border-radius(4px);
   border: none;
 }
@@ -138,20 +129,25 @@ ul {
   padding: 0;
 }
 
+.logo {
+  height: 64px;
+  padding-left: 48px;
+}
+
 .masthead {
-  background: $dark;
-  color: $background;
-  padding-bottom: 8px;
+  background: $anchor;
+  color: $white;
+  height: 64px;
   text-align: center;
 }
 
 .title {
-  margin-left: auto;
-  margin-right: auto;
+  color: $dark;
+  padding-left: 8px;
 }
 
-.name {
-  font-size: 20px;
+.title {
+  line-height: 64px;
 }
 
 .position, .subtitle{
@@ -162,24 +158,13 @@ ul {
   font-size: 18px
 }
 
-.top {
+.top-left {
+  float: left;
+}
+
+.top-right {
   float: right;
-  text-align: center;
-  color: $background;
-  font-size: 12px;
-  margin-top: 4px;
-}
-
-.collaborate {
-  background: $complement;
-}
-
-.quote {
-  background: $emphasis;
-}
-
-.explore {
-  background: $anchor;
+  height: 64px;
 }
 
 .intro {
@@ -197,14 +182,14 @@ ul {
 
 .headline {
   margin-top: 48px;
-  color: $anchor;
+  color: $emphasis;
   line-height: 36px;
   margin-bottom: 8px;
   font-family: $alternate;
 }
 
 .subtitle {
-  color: $complement;
+  color: $dark;
   margin-bottom: 16px;
   font-size: 14px;
 }

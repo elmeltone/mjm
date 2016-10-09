@@ -1,24 +1,18 @@
 @charset "UTF-8";
 /*
 Theme Name: Portfolio
-Description: JavaScript web development portfolio
-Author: Michael J Melton <michael@MeltWebs.com>
+Description: SEO & JavaScript Solutions for the Modern Web
+Author: Michael J Melton <michael@meltwebs.com>
 Author URI: http://MeltWebs.com
-Tags: Website, Portfolio, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
+Tags: Website, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
 MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 /***** Colors ******/
-/* $dark: #2C3E50 dark blue */
-/* $emphasis: #E74C3C red */
-/* $background: #ECF0F1 white */
-/* $complement: #3498DB light blue */
-/* $anchor: #2980B9 faded blue */
-/* Alternate Colors */
-/* brown */
-/* blood orange */
+/* sky blue */
+/* sunshine */
+/* charcoal */
+/* black */
 /* white */
-/* light sea */
-/* dark sea */
 /* Archive Colors */
 /***** Fonts ******/
 @font-face {
@@ -2476,9 +2470,7 @@ textarea {
 /***** General Styles ******/
 html, body {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  font-size: 1em;
-  color: #037E8C;
-  background: #FFFFFA; }
+  font-size: 1em; }
   html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: none; }
 
@@ -2490,18 +2482,18 @@ a:hover, button:hover {
   cursor: pointer; }
 
 a {
-  color: #024959; }
+  color: #85ceea; }
   a:hover {
     cursor: pointer;
-    text-shadow: 0 0 4px #037E8C; }
+    text-shadow: 0 0 4px #EFE034; }
 
 p {
   margin: 0;
   padding: 0; }
 
 button {
-  background-color: #F24C27;
-  color: #FFFFFA;
+  background-color: #EFE034;
+  color: #FFFFFF;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2517,18 +2509,22 @@ ul {
 .wrapper {
   padding: 0; }
 
+.logo {
+  height: 64px;
+  padding-left: 48px; }
+
 .masthead {
-  background: #5F5448;
-  color: #FFFFFA;
-  padding-bottom: 8px;
+  background: #85ceea;
+  color: #FFFFFF;
+  height: 64px;
   text-align: center; }
 
 .title {
-  margin-left: auto;
-  margin-right: auto; }
+  color: #333333;
+  padding-left: 8px; }
 
-.name {
-  font-size: 20px; }
+.title {
+  line-height: 64px; }
 
 .position, .subtitle {
   font-family: "Monofred-Ultralight", sans-serif; }
@@ -2536,21 +2532,12 @@ ul {
 .position {
   font-size: 18px; }
 
-.top {
+.top-left {
+  float: left; }
+
+.top-right {
   float: right;
-  text-align: center;
-  color: #FFFFFA;
-  font-size: 12px;
-  margin-top: 4px; }
-
-.collaborate {
-  background: #037E8C; }
-
-.quote {
-  background: #F24C27; }
-
-.explore {
-  background: #024959; }
+  height: 64px; }
 
 .intro {
   clear: both;
@@ -2565,13 +2552,13 @@ ul {
 
 .headline {
   margin-top: 48px;
-  color: #024959;
+  color: #EFE034;
   line-height: 36px;
   margin-bottom: 8px;
   font-family: "Tex Gyre Adventor", sans-serif; }
 
 .subtitle {
-  color: #037E8C;
+  color: #333333;
   margin-bottom: 16px;
   font-size: 14px; }
 
