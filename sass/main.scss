@@ -151,13 +151,13 @@ ul {
 }
 
 .options-wrapper {
-  margin: 0 48px 0 0;
+  margin: 0 72px 0 0;
   padding: 0;
 }
 
 .options {
   text-decoration: underline;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 
 .position, .subtitle{
@@ -182,7 +182,7 @@ ul {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.64);
 }
 
 .intro {
@@ -190,7 +190,7 @@ ul {
   text-align: center;
   margin: 0 auto;
   height: 320px;
-  background-image: url(http://i.imgur.com/UBxSXBk.jpg);
+  background-image: url(http://i.imgur.com/lIWmGG5.jpg);
   background-size: cover;
 }
 
@@ -209,12 +209,22 @@ ul {
 
 .subtitle {
   color: $white;
-  margin-bottom: 16px;
+  padding-top: 8px;
+  margin-bottom: 8px;
   font-size: 14px;
 }
 
 .action {
-  margin-bottom: 16px;
+  margin: 16px 0;
+  width: 128px;
+}
+
+.js {
+  background-color: $anchor;
+}
+
+.seo {
+  background-color: $emphasis;
 }
 
 .archive {
