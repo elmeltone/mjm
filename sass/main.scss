@@ -263,6 +263,11 @@ ul {
   margin-right: 1%;
 }
 
+.describe-title, .describe {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .glossary {
   background-color: $anchor;
   &:hover {
