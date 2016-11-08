@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <polygon strokeWidth="0" strokecolor="#000000" fill="#85ceea" edge="0" orient="x" sides="3" shape="regularPoly" id="svg_3" cy="83.143149" cx="181.689381"/>
+  <polygon strokeWidth="0" strokecolor="none" fill="#85ceea" edge="0" orient="x" sides="3" shape="regularPoly" id="svg_4" cy="83.143149" cx="200.427487"/>
+  <g id="svg_21">
+   <rect stroke="#000000" id="svg_1" height="256" width="256" y="0" x="0" stroke-width="0" fill="#85ceea"/>
+   <g id="svg_11">
+    <polygon stroke="#000000" transform="rotate(-90 88.88710021972658,70.66258239746094) " stroke-width="0" points="149.26373291015625,70.66256713867188 28.510482788085938,156.18963623046875 28.510482788085938,-14.864692687988281 149.26373291015625,70.66256713867188 " strokeWidth="0" strokecolor="#000000" fill="#ffffff" edge="139.433858" orient="x" sides="3" shape="regularPoly" id="svg_2" cy="71.431833" cx="174.662591"/>
+    <polygon id="svg_10" stroke="#000000" transform="rotate(-90 167.35293579101565,70.66258239746095) " stroke-width="0" points="227.72958374023438,70.66256713867188 106.97630310058594,156.18963623046875 106.97630310058594,-14.864692687988281 227.72958374023438,70.66256713867188 " strokeWidth="0" strokecolor="#000000" fill="#ffffff" edge="139.433858" orient="x" sides="3" shape="regularPoly" cy="71.431833" cx="174.662591"/>
+   </g>
+   <g transform="rotate(180 128.1199951171875,190.11819458007812) " id="svg_12">
+    <polygon id="svg_13" stroke="#000000" transform="rotate(-90 88.88704681396486,190.11822509765625) " stroke-width="0" points="149.26351928710938,190.1181640625 28.510574340820312,275.6459655761719 28.510574340820312,104.59046936035156 149.26351928710938,190.1181640625 " strokeWidth="0" strokecolor="#000000" fill="#333333" edge="139.433858" orient="x" sides="3" shape="regularPoly" cy="71.431833" cx="174.662591"/>
+    <polygon id="svg_14" stroke="#000000" transform="rotate(-90 167.3528747558594,190.11822509765625) " stroke-width="0" points="227.7293701171875,190.1181640625 106.97639465332031,275.6459655761719 106.97639465332031,104.59046936035156 227.7293701171875,190.1181640625 " strokeWidth="0" strokecolor="#000000" fill="#333333" edge="139.433858" orient="x" sides="3" shape="regularPoly" cy="71.431833" cx="174.662591"/>
+   </g>
+   <circle stroke="#000000" id="svg_18" r="19.002295" cy="23.344656" cx="128.220347" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#efe034"/>
+  </g>
+ </g>
+</svg>
