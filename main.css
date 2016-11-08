@@ -3,13 +3,13 @@
 Theme Name: MeltWebs
 Author: Michael J Melton <michael@meltwebs.com>
 */
-/***** Colors ******/
+/***** Colors **************/
 /* sky blue */
 /* sunshine */
 /* charcoal */
 /* black */
 /* white */
-/***** Fonts ******/
+/***** Fonts ***************/
 @font-face {
   font-family: 'Monofred-Ultralight';
   src: url("fonts/Monofred-Ultralight.ttf"); }
@@ -18,7 +18,7 @@ Author: Michael J Melton <michael@meltwebs.com>
   font-family: 'Tex Gyre Adventor';
   src: url("fonts/texgyreadventor-regular.otf"); }
 
-/***** Normalize ******/
+/***** Normalize ***********/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2461,7 +2461,7 @@ textarea {
 .fa-percent:before {
   content: ""; }
 
-/***** Mixins & Keyframes ******/
+/***** Mixins & Keyframes **/
 /***** General Styles ******/
 html, body {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -2497,13 +2497,17 @@ button {
   border: none; }
   button:hover {
     box-shadow: 0 0 12px #EFE034; }
+  button:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 12px #EFE034;
+    box-shadow: 0 0 12px #EFE034; }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/***** Detail Styles ******/
+/***** Detail Styles *******/
 /*** Nav ***/
 .masthead {
   position: fixed;
@@ -2513,6 +2517,9 @@ ul {
   width: 100vw;
   height: 64px;
   border-bottom: 1px solid #000000; }
+
+.no-hover:hover {
+  color: #333333; }
 
 .marquee {
   margin: 0;
@@ -2753,3 +2760,26 @@ ul {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; }
+
+/***** Pages ***************/
+/*** About ***/
+.page-body {
+  padding: 64px 0 20px 0;
+  background: #FFFFFF; }
+
+.page-title {
+  text-decoration: underline;
+  width: 70%;
+  margin: 0 auto; }
+
+.page-text {
+  width: 70%;
+  margin: 12px auto 0 auto;
+  font-family: 'Tex Gyre Adventor'; }
+
+.bullets {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000; }
+
+/***** Responsive **********/
