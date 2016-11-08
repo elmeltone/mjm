@@ -1,10 +1,6 @@
 /*
-Theme Name: Portfolio
-Description: SEO & JavaScript Solutions for the Modern Web
+Theme Name: MeltWebs
 Author: Michael J Melton <michael@meltwebs.com>
-Author URI: http://MeltWebs.com
-Tags: Website, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
-MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 
 /***** Colors ******/
@@ -14,16 +10,6 @@ $dark: #333333 /* charcoal */ ;
 $black: #000000 /* black */ ;
 $white: #FFFFFF /* white */ ;
 
-/* Archive Colors */
-$pictionary-back: #02c8a7;
-$pictionary-text: #f53240;
-$thechat-back: #27408b;
-$thechat-text: #00c5cd;
-$api-back: #E74C3C;
-$api-text: #2980B9;
-$shop-back: #85DB18;
-$shop-text: #493F0B;
-$react-text: #00d8ff;
 
 /***** Fonts ******/
 
@@ -38,6 +24,7 @@ $react-text: #00d8ff;
 $light: 'Monofred-Ultralight', sans-serif;
 $sans: Futura,Trebuchet MS,Arial,sans-serif;
 $alternate: 'Tex Gyre Adventor', sans-serif;
+
 
 /***** Normalize ******/
 
@@ -54,6 +41,7 @@ $alternate: 'Tex Gyre Adventor', sans-serif;
 @import "rotated-flipped";
 @import "stacked";
 @import "icons";
+
 
 /***** Mixins & Keyframes ******/
 
@@ -75,6 +63,7 @@ $alternate: 'Tex Gyre Adventor', sans-serif;
     box-shadow: $top $left $blur $spread $color;
   }
 }
+
 
 /***** General Styles ******/
 
@@ -126,7 +115,10 @@ ul {
   padding: 0;
 }
 
+
 /***** Detail Styles ******/
+
+/*** Nav ***/
 
 .masthead {
   position: fixed;
@@ -212,6 +204,9 @@ ul {
   text-align: center;
 }
 
+
+/*** Intro ***/
+
 .position, .subtitle{
   font-family: $light;
 }
@@ -262,29 +257,34 @@ ul {
   width: 128px;
 }
 
-.js {
-  background-color: $anchor;
-}
 
-.seo {
-  background-color: $emphasis;
-}
-
-.subscription {
-  float: left;
-  font-family: $alternate;
-}
+/*** Description ***/
 
 .description {
   width: 100%;
-  height: 32px;
+  height: 24px;
   background-color: $anchor;
 }
 
-.subscribe {
-  width: 700px;
+.follow-wrapper {
+  width: 156px;
   margin: 0 auto;
-  line-height: 32px;
+}
+
+.twitter-wrapper, .github-wrapper, .linkedin-wrapper {
+  width: 52px;
+  float: left;
+  line-height: 24px;
+  text-align: center;
+}
+
+.twitter {
+  text-align: right;
+}
+
+.follow-text {
+  width: 32px;
+  margin: 0 auto;
 }
 
 .email, .email-submit {

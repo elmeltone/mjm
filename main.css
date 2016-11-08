@@ -1,11 +1,7 @@
 @charset "UTF-8";
 /*
-Theme Name: Portfolio
-Description: SEO & JavaScript Solutions for the Modern Web
+Theme Name: MeltWebs
 Author: Michael J Melton <michael@meltwebs.com>
-Author URI: http://MeltWebs.com
-Tags: Website, Drawing, Pictionary, Chat, Chatroom, Shopping List, Pictures,
-MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 */
 /***** Colors ******/
 /* sky blue */
@@ -13,7 +9,6 @@ MERN, Mongo, Express, React, Node.js, SEO, Search Engine Optimization
 /* charcoal */
 /* black */
 /* white */
-/* Archive Colors */
 /***** Fonts ******/
 @font-face {
   font-family: 'Monofred-Ultralight';
@@ -2508,6 +2503,7 @@ ul {
   padding: 0; }
 
 /***** Detail Styles ******/
+/*** Nav ***/
 .masthead {
   position: fixed;
   top: 0;
@@ -2580,6 +2576,7 @@ ul {
   line-height: 32px;
   text-align: center; }
 
+/*** Intro ***/
 .position, .subtitle {
   font-family: "Monofred-Ultralight", sans-serif; }
 
@@ -2622,25 +2619,28 @@ ul {
   margin: 16px 0;
   width: 128px; }
 
-.js {
-  background-color: #85ceea; }
-
-.seo {
-  background-color: #EFE034; }
-
-.subscription {
-  float: left;
-  font-family: "Tex Gyre Adventor", sans-serif; }
-
+/*** Description ***/
 .description {
   width: 100%;
-  height: 32px;
+  height: 24px;
   background-color: #85ceea; }
 
-.subscribe {
-  width: 700px;
-  margin: 0 auto;
-  line-height: 32px; }
+.follow-wrapper {
+  width: 156px;
+  margin: 0 auto; }
+
+.twitter-wrapper, .github-wrapper, .linkedin-wrapper {
+  width: 52px;
+  float: left;
+  line-height: 24px;
+  text-align: center; }
+
+.twitter {
+  text-align: right; }
+
+.follow-text {
+  width: 32px;
+  margin: 0 auto; }
 
 .email, .email-submit {
   height: 28px;
