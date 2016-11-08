@@ -129,17 +129,20 @@ ul {
 /***** Detail Styles ******/
 
 .masthead {
+  position: fixed;
+  top: 0;
   background: $anchor;
   color: $dark;
-  width: 100%;
+  width: 100vw;
   height: 64px;
   border-bottom: 1px solid $black;
 }
 
 .marquee {
   margin: 0;
-  width: 256px;
+  width: 80%;
   height: 64px;
+  float: left;
 }
 
 .logo, .title {
@@ -160,13 +163,43 @@ ul {
   line-height: 64px;
 }
 
-.title, .options {
+.nav-options {
+  width: 20%;
+  float: left;
+  text-align: center;
+  height: 64px;
+}
+
+.line-wrapper {
+  cursor: pointer;
+  width: 32px;
+  margin: 21px auto;
+}
+
+.line {
+  width: 100%;
+  margin: 5px 0 0 0;
+  height: 4px;
+  background: $dark;
 }
 
 .options-wrapper {
   width: 100%;
   height: 32px;
   margin: 0;
+  z-index: 1;
+  transition: margin 0.33s;
+    -moz-transition: margin 0.33s;
+    -webkit-transition: margin 0.33s;
+    -o-transition: margin 0.33s;
+}
+
+.icon-unclicked {
+  margin-top: 32;
+}
+
+.icon-clicked {
+  margin-top: 64px;
 }
 
 .options {
