@@ -2674,6 +2674,46 @@ ul {
 
 /*** Footer ***/
 .footer {
-  height: 128px;
+  height: 48px;
   background: #333333;
   opacity: 1; }
+
+.follow-bottom {
+  margin: 0;
+  height: 48px;
+  width: 30%;
+  float: left; }
+
+.bottom {
+  height: 48px;
+  line-height: 48px; }
+
+.corner {
+  margin-left: 24px; }
+
+.foot-text {
+  color: #EFE034; }
+
+.logo-wrapper-bottom {
+  width: 70%;
+  height: 48px;
+  margin: 0;
+  float: left; }
+
+.built-by {
+  font-family: 'Tex Gyre Adventor';
+  font-size: 8px;
+  color: #FFFFFF;
+  margin: 0 6px;
+  line-height: 48px;
+  width: 180px;
+  text-align: right; }
+
+.logo-bottom {
+  height: 30px;
+  margin: 9px 24px 9px 9px;
+  float: right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
