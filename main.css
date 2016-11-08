@@ -2548,8 +2548,13 @@ ul {
 .line {
   width: 100%;
   margin: 5px 0 0 0;
-  height: 4px;
+  height: 4px; }
+
+.dark {
   background: #333333; }
+
+.light {
+  background: #EFE034; }
 
 .options-wrapper {
   width: 100%;
@@ -2619,10 +2624,28 @@ ul {
   margin: 16px 0;
   width: 128px; }
 
+.follow-wrapper {
+  background: #85ceea;
+  height: 24px; }
+
+.follow {
+  width: 292px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Tex Gyre Adventor';
+  color: #333333; }
+
+.follow-text, .twitter, .github, .linkedin {
+  float: left;
+  line-height: 24px;
+  text-align: center; }
+
+.twitter, .github, .linkedin {
+  width: 24px; }
+
 /*** Description ***/
 .description {
   width: 100%;
-  height: 480px;
   background-color: #FFFFFF;
   padding-top: 16px; }
 
