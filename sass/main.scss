@@ -203,6 +203,7 @@ ul {
   height: 32px;
   margin: 0;
   z-index: 1;
+  border-bottom: 1px solid $black;
   transition: top 0.33s;
     -moz-transition: top 0.33s;
     -webkit-transition: top 0.33s;
@@ -230,12 +231,13 @@ ul {
 
 /*** Intro ***/
 
-.position, .subtitle{
-  font-family: $light;
-}
-
-.position {
-  font-size: 18px
+.intro {
+  clear: both;
+  text-align: center;
+  margin: 64px auto 0 auto;
+  height: 320px;
+  background-image: url(http://i.imgur.com/lIWmGG5.jpg);
+  background-size: cover;
 }
 
 .shade {
@@ -244,15 +246,6 @@ ul {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.64);
-}
-
-.intro {
-  clear: both;
-  text-align: center;
-  margin: 64px auto 0 auto;
-  height: 320px;
-  background-image: url(http://i.imgur.com/lIWmGG5.jpg);
-  background-size: cover;
 }
 
 .headline, .subtitle, button {
@@ -272,6 +265,7 @@ ul {
   color: $white;
   padding-top: 8px;
   margin-bottom: 8px;
+  font-family: $light;
   font-size: 14px;
 }
 

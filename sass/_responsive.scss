@@ -10,7 +10,84 @@
   .page-body {
     min-height: 72vh;
   }
+  .describe-title {
+    max-width: 80%;
+  }
+  .describe {
+    max-width: 70%;
+  }
   .built-by, .logo-wrapper-bottom {
     float: right;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .line-wrapper {
+    display: none;
+  }
+  .options-wrapper {
+    width: 50vw;
+    top: 0;
+    right: 16px;
+    height: 64px;
+    z-index: 3;
+    background: transparent;
+  }
+  .options {
+    height: 64px;
+    line-height: 54px;
+    padding-top: 12px;
+    width: 25%;
+    font-size: 12px;
+  }
+  .intro {
+    height: 85vh;
+  }
+  .headline {
+    font-size: 2.5em;
+    padding-top: 128px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .action {
+    height: 42px;
+    width: 160px;
+    font-size: 20px;
+  }
+  .description {
+    padding-top: 32px;
+  }
+  .describe-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .describe {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .details-wrapper {
+    height: 128px;
+    width: 60%;
+  }
+  .creation {
+    margin-top: 48px;
+  }
+  .graphic-wrapper {
+    height: 52px;
+    width: 56px;
+    margin: 16px 8px;
+  }
+  .graphic {
+    font-size: 3em;
+    line-height: 52px;
+  }
+  .details-title {
+    font-size: 15px;
+  }
+  .details {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }

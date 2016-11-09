@@ -2573,6 +2573,7 @@ ul {
   height: 32px;
   margin: 0;
   z-index: 1;
+  border-bottom: 1px solid #000000;
   transition: top 0.33s;
   -moz-transition: top 0.33s;
   -webkit-transition: top 0.33s;
@@ -2594,19 +2595,6 @@ ul {
   text-align: center; }
 
 /*** Intro ***/
-.position, .subtitle {
-  font-family: "Monofred-Ultralight", sans-serif; }
-
-.position {
-  font-size: 18px; }
-
-.shade {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.64); }
-
 .intro {
   clear: both;
   text-align: center;
@@ -2614,6 +2602,13 @@ ul {
   height: 320px;
   background-image: url(http://i.imgur.com/lIWmGG5.jpg);
   background-size: cover; }
+
+.shade {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.64); }
 
 .headline, .subtitle, button {
   max-width: 80%;
@@ -2630,6 +2625,7 @@ ul {
   color: #FFFFFF;
   padding-top: 8px;
   margin-bottom: 8px;
+  font-family: "Monofred-Ultralight", sans-serif;
   font-size: 14px; }
 
 .action {
@@ -2769,11 +2765,11 @@ ul {
 /*** About ***/
 .page-body {
   margin-top: 64px;
-  padding: 64px 0 20px 0;
+  padding: 36px 0 20px 0;
   background: #FFFFFF;
   min-height: 320px; }
 
-.blog-page {
+.blog-page, .contact-page, .about-page {
   min-height: 65vh; }
 
 .page-title {
@@ -2822,5 +2818,63 @@ ul {
 @media screen and (min-width: 400px) {
   .page-body {
     min-height: 72vh; }
+  .describe-title {
+    max-width: 80%; }
+  .describe {
+    max-width: 70%; }
   .built-by, .logo-wrapper-bottom {
     float: right; } }
+
+@media screen and (min-width: 500px) {
+  .line-wrapper {
+    display: none; }
+  .options-wrapper {
+    width: 50vw;
+    top: 0;
+    right: 16px;
+    height: 64px;
+    z-index: 3;
+    background: transparent; }
+  .options {
+    height: 64px;
+    line-height: 54px;
+    padding-top: 12px;
+    width: 25%;
+    font-size: 12px; }
+  .intro {
+    height: 85vh; }
+  .headline {
+    font-size: 2.5em;
+    padding-top: 128px; }
+  .subtitle {
+    font-size: 18px; }
+  .action {
+    height: 42px;
+    width: 160px;
+    font-size: 20px; }
+  .description {
+    padding-top: 32px; }
+  .describe-title {
+    font-size: 20px;
+    line-height: 24px; }
+  .describe {
+    margin-top: 15px;
+    font-size: 16px; }
+  .details-wrapper {
+    height: 128px;
+    width: 60%; }
+  .creation {
+    margin-top: 48px; }
+  .graphic-wrapper {
+    height: 52px;
+    width: 56px;
+    margin: 16px 8px; }
+  .graphic {
+    font-size: 3em;
+    line-height: 52px; }
+  .details-title {
+    font-size: 15px; }
+  .details {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px; } }
