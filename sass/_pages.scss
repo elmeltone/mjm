@@ -3,6 +3,7 @@
 .page-body {
   padding: 64px 0 20px 0;
   background: $white;
+  min-height: 320px;
 }
 
 .blog-page {
@@ -27,23 +28,29 @@
   color: $black;
 }
 
-fieldset {
-  border: none;
-  max-width: 70%;
-  margin: 24px auto;
+.contact-option-wrapper {
+  width: 100%;
+  height: 48px;
+  margin-top: 12px;
 }
 
-input, textarea {
-  border: none;
-  background: lighten($anchor, 15%);
-  margin-bottom: 8px;
-  &:focus {
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: 0 0 12px none;
-  }
+.contact-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  height: 48px;
 }
 
-.btn {
-  margin-top: 16px;
+.contact-icon, .contact-text {
+  float: left;
+  line-height: 48px;
+}
+
+.contact-icon {
+  margin-right: 12px;
+  width: 32px;
+  text-align: center;
+}
+
+.contact-text {
+  font-family: 'Tex Gyre Adventor';
 }
