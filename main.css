@@ -2516,7 +2516,8 @@ ul {
   color: #333333;
   width: 100vw;
   height: 64px;
-  border-bottom: 1px solid #000000; }
+  border-bottom: 1px solid #000000;
+  z-index: 2; }
 
 .no-hover:hover {
   color: #333333; }
@@ -2565,21 +2566,23 @@ ul {
   background: #EFE034; }
 
 .options-wrapper {
+  position: fixed;
+  top: 32px;
   background: #FFFFFF;
   width: 100%;
   height: 32px;
   margin: 0;
   z-index: 1;
-  transition: margin 0.33s;
-  -moz-transition: margin 0.33s;
-  -webkit-transition: margin 0.33s;
-  -o-transition: margin 0.33s; }
+  transition: top 0.33s;
+  -moz-transition: top 0.33s;
+  -webkit-transition: top 0.33s;
+  -o-transition: top 0.33s; }
 
 .icon-unclicked {
-  margin-top: 32; }
+  top: 32px; }
 
 .icon-clicked {
-  margin-top: 64px; }
+  top: 64px; }
 
 .options {
   text-decoration: underline;
@@ -2607,7 +2610,7 @@ ul {
 .intro {
   clear: both;
   text-align: center;
-  margin: 0 auto;
+  margin: 64px auto 0 auto;
   height: 320px;
   background-image: url(http://i.imgur.com/lIWmGG5.jpg);
   background-size: cover; }
@@ -2682,7 +2685,7 @@ ul {
   color: #333333; }
 
 .details-wrapper {
-  width: 280px;
+  width: 256px;
   height: 64px;
   margin: 24px auto 0 auto; }
 
@@ -2692,7 +2695,7 @@ ul {
 .graphic-wrapper {
   height: 32px;
   width: 32px;
-  margin: 8px;
+  margin: 16px 12px 16px 8px;
   text-align: center; }
 
 .graphic {
@@ -2700,7 +2703,7 @@ ul {
   color: #44b4df; }
 
 .details-title, .details {
-  width: 228px;
+  width: 192px;
   margin-left: 4px; }
 
 .details-title {
@@ -2714,7 +2717,8 @@ ul {
 
 .lower {
   font-size: 14px;
-  margin-top: 24px; }
+  margin-top: 36px;
+  margin-bottom: 8px; }
 
 /*** Footer ***/
 .footer {
@@ -2764,12 +2768,13 @@ ul {
 /***** Pages ***************/
 /*** About ***/
 .page-body {
+  margin-top: 64px;
   padding: 64px 0 20px 0;
   background: #FFFFFF;
   min-height: 320px; }
 
 .blog-page {
-  min-height: 50vh; }
+  min-height: 65vh; }
 
 .page-title {
   text-decoration: underline;
@@ -2813,3 +2818,9 @@ ul {
 @media screen and (min-width: 370px) {
   .built-by {
     width: 195px; } }
+
+@media screen and (min-width: 400px) {
+  .page-body {
+    min-height: 72vh; }
+  .built-by, .logo-wrapper-bottom {
+    float: right; } }

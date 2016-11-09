@@ -5,3 +5,12 @@
     width: 195px;
   }
 }
+
+@media screen and (min-width: 400px) {
+  .page-body {
+    min-height: 72vh;
+  }
+  .built-by, .logo-wrapper-bottom {
+    float: right;
+  }
+}
