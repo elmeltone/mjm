@@ -69,6 +69,7 @@
   .details-wrapper {
     height: 128px;
     width: 60%;
+    max-width: 360px;
   }
   .creation {
     margin-top: 48px;
@@ -84,16 +85,66 @@
   }
   .details-title {
     font-size: 15px;
+    width: 240px;
   }
   .details {
     margin-top: 8px;
     font-size: 14px;
     line-height: 18px;
+    width: 240px;
   }
   .page-title, .page-text, .contact-wrapper {
     width: 60%;
   }
   .contact-wrapper {
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .options {
+    font-size: 15px;
+  }
+  .headline {
+    font-size: 3em;
+    padding-top: 180px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .graphic-wrapper {
+    margin: 16px 16px 16px 8px;
+  }
+  .details-title, .details {
+    width: 262px;
+  }
+  .lower {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .corner {
+    margin-left: 36px;
+  }
+  .bottom {
+    width: 40px;
+    font-size: 1.5em;
+  }
+  .logo-bottom {
+    height: 36px;
+    margin: 6px 48px 6px 0;
+  }
+  .built-by {
+    font-size: 12px;
+  }
+  .page-body {
+    padding-top: 48px;
+  }
+  .page-title, .page-text, .contact-wrapper {
+    width: 50%;
+  }
+  .contact-wrapper {
+    width: 55%;
   }
 }
