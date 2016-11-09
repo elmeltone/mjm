@@ -2809,3 +2809,7 @@ ul {
   font-family: 'Tex Gyre Adventor'; }
 
 /***** Responsive **********/
+/*** Responsive ***/
+@media screen and (min-width: 370px) {
+  .built-by {
+    width: 195px; } }
