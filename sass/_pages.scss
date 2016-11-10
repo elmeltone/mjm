@@ -9,8 +9,12 @@
 
 .blog-page, .contact-page {
   height: 100vh;
-  padding-bottom: 48px;
+  padding-bottom: 96px;
   overflow: hidden;
+}
+
+.page-head-image {
+  margin: 0 auto;
 }
 
 .page-title {
@@ -29,6 +33,7 @@
   font-family: Futura, Trebuchet MS, Arial, sans-serif;;
   font-size: 18px;
   color: $black;
+  text-decoration: underline;
 }
 
 .contact-option-wrapper {
@@ -63,4 +68,12 @@
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+.early-post {
+  height: auto;
+}
+
+.early-footer {
+  position: static;
 }

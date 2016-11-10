@@ -2771,8 +2771,11 @@ ul {
 
 .blog-page, .contact-page {
   height: 100vh;
-  padding-bottom: 48px;
+  padding-bottom: 96px;
   overflow: hidden; }
+
+.page-head-image {
+  margin: 0 auto; }
 
 .page-title {
   text-decoration: underline;
@@ -2787,7 +2790,8 @@ ul {
 .bullets {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   font-size: 18px;
-  color: #000000; }
+  color: #000000;
+  text-decoration: underline; }
 
 .contact-option-wrapper {
   width: 100%;
@@ -2817,6 +2821,12 @@ ul {
   bottom: 0;
   left: 0; }
 
+.early-post {
+  height: auto; }
+
+.early-footer {
+  position: static; }
+
 /***** Responsive **********/
 /*** Responsive ***/
 @media screen and (min-width: 370px) {
@@ -2836,6 +2846,8 @@ ul {
     max-width: 70%; } }
 
 @media screen and (min-width: 500px) {
+  .nav-wrapper {
+    border-bottom: 1px solid #000000; }
   .masthead {
     border-bottom: none; }
   .line-wrapper {

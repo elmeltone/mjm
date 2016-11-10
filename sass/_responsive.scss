@@ -25,6 +25,9 @@
 }
 
 @media screen and (min-width: 500px) {
+  .nav-wrapper {
+    border-bottom: 1px solid $black;
+  }
   .masthead {
     border-bottom: none;
   }
