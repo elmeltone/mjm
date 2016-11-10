@@ -2969,7 +2969,7 @@ ul {
   .contact-option-wrapper {
     margin-top: 48px; }
   .contact-wrapper {
-    width: 500px;
+    width: 70%;
     height: 64px; }
   .contact-icon {
     line-height: 64px; }
@@ -2995,11 +2995,11 @@ ul {
     width: 50%;
     float: left; } }
 
-@media screen and (min-width: 750px) and (max-width: 1199px) {
+@media screen and (min-width: 750px) {
   .page-title, .contact-wrapper {
-    width: 560px; }
+    max-width: 960px; }
   .page-text {
-    width: 600px;
+    max-width: 960px;
     font-size: 1em; } }
 
 @media screen and (min-width: 750px) and (max-width: 999px) {
