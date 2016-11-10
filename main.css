@@ -2589,7 +2589,7 @@ ul {
   text-decoration: underline;
   margin: 0;
   float: right;
-  width: 25vw;
+  width: 33vw;
   font-size: 10px;
   line-height: 32px;
   text-align: center; }
@@ -2762,14 +2762,14 @@ ul {
   border-radius: 4px; }
 
 /***** Pages ***************/
-/*** About ***/
+/*** Pages ***/
 .page-body {
   margin-top: 64px;
   padding: 36px 0 48px 0;
   background: #FFFFFF;
   min-height: 320px; }
 
-.blog-page, .contact-page, .about-page {
+.blog-page, .contact-page {
   height: 100vh;
   padding-bottom: 48px;
   overflow: hidden; }
@@ -2852,7 +2852,7 @@ ul {
     height: 64px;
     line-height: 54px;
     padding-top: 12px;
-    width: 25%; }
+    width: 33%; }
   .intro {
     height: 85vh; }
   .headline {
