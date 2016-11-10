@@ -2,13 +2,15 @@
 
 .page-body {
   margin-top: 64px;
-  padding: 36px 0 20px 0;
+  padding: 36px 0 48px 0;
   background: $white;
   min-height: 320px;
 }
 
 .blog-page, .contact-page, .about-page {
-  min-height: 65vh;
+  height: 100vh;
+  padding-bottom: 48px;
+  overflow: hidden;
 }
 
 .page-title {
@@ -54,4 +56,11 @@
 
 .contact-text {
   font-family: 'Tex Gyre Adventor';
+}
+
+.footer-whitespace {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

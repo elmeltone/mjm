@@ -2588,7 +2588,7 @@ ul {
 .options {
   text-decoration: underline;
   margin: 0;
-  float: left;
+  float: right;
   width: 25vw;
   font-size: 10px;
   line-height: 32px;
@@ -2765,12 +2765,14 @@ ul {
 /*** About ***/
 .page-body {
   margin-top: 64px;
-  padding: 36px 0 20px 0;
+  padding: 36px 0 48px 0;
   background: #FFFFFF;
   min-height: 320px; }
 
 .blog-page, .contact-page, .about-page {
-  min-height: 65vh; }
+  height: 100vh;
+  padding-bottom: 48px;
+  overflow: hidden; }
 
 .page-title {
   text-decoration: underline;
@@ -2809,6 +2811,12 @@ ul {
 .contact-text {
   font-family: 'Tex Gyre Adventor'; }
 
+.footer-whitespace {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
 /***** Responsive **********/
 /*** Responsive ***/
 @media screen and (min-width: 370px) {
@@ -2818,34 +2826,38 @@ ul {
 @media screen and (min-width: 400px) {
   .page-body {
     min-height: 72vh; }
-  .describe-title {
-    max-width: 80%; }
-  .describe {
-    max-width: 70%; }
   .built-by, .logo-wrapper-bottom {
     float: right; } }
 
+@media screen and (min-width: 400px) and (max-width: 749px) {
+  .describe-title {
+    max-width: 80%; }
+  .describe {
+    max-width: 70%; } }
+
 @media screen and (min-width: 500px) {
+  .masthead {
+    border-bottom: none; }
   .line-wrapper {
     display: none; }
   .options-wrapper {
     width: 50vw;
     top: 0;
-    right: 16px;
+    right: 0;
     height: 64px;
     z-index: 3;
-    background: transparent; }
+    background: #85ceea;
+    border-bottom: none; }
   .options {
     height: 64px;
     line-height: 54px;
     padding-top: 12px;
-    width: 25%;
-    font-size: 12px; }
+    width: 25%; }
   .intro {
     height: 85vh; }
   .headline {
     font-size: 2.5em;
-    padding-top: 128px; }
+    padding-top: 200px; }
   .subtitle {
     font-size: 18px; }
   .action {
@@ -2880,8 +2892,14 @@ ul {
     margin-top: 8px;
     font-size: 14px;
     line-height: 18px;
-    width: 240px; }
-  .page-title, .page-text, .contact-wrapper {
+    width: 240px; } }
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .options {
+    font-size: 12px; } }
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .page-title, .page-text {
     width: 60%; }
   .contact-wrapper {
     width: 65%; } }
@@ -2891,7 +2909,7 @@ ul {
     font-size: 15px; }
   .headline {
     font-size: 3em;
-    padding-top: 180px; }
+    padding-top: 256px; }
   .subtitle {
     font-size: 20px; }
   .graphic-wrapper {
@@ -2902,8 +2920,6 @@ ul {
     margin-bottom: 48px; } }
 
 @media screen and (min-width: 700px) {
-  .corner {
-    margin-left: 36px; }
   .bottom {
     width: 40px;
     font-size: 1.5em; }
@@ -2911,10 +2927,85 @@ ul {
     height: 36px;
     margin: 6px 48px 6px 0; }
   .built-by {
-    font-size: 12px; }
+    font-size: 12px; } }
+
+@media screen and (min-width: 700px) and (max-width: 749px) {
   .page-body {
     padding-top: 48px; }
-  .page-title, .page-text, .contact-wrapper {
+  .page-title, .page-text {
     width: 50%; }
   .contact-wrapper {
-    width: 55%; } }
+    width: 55%; }
+  .corner {
+    margin-left: 36px; } }
+
+@media screen and (min-width: 750px) {
+  .nav-wrapper {
+    background: #85ceea;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .masthead-and-options {
+    width: 100%;
+    max-width: 1200px;
+    height: 64px;
+    margin: 0 auto; }
+  .masthead {
+    position: static;
+    width: 50%;
+    float: left; }
+  .options-wrapper {
+    position: static;
+    width: 50%;
+    float: left; }
+  .page-body {
+    margin-top: 0;
+    padding-top: 112px; }
+  .describe-title {
+    max-width: 545px; }
+  .describe {
+    max-width: 478px; }
+  .contact-option-wrapper {
+    margin-top: 48px; }
+  .contact-wrapper {
+    width: 500px;
+    height: 64px; }
+  .contact-icon {
+    line-height: 64px; }
+  .contact-text {
+    font-size: 24px;
+    line-height: 64px; }
+  .corner {
+    margin-left: 24px; }
+  .footer-wrapper {
+    background: #333333;
+    width: 100%; }
+  .social-and-sig {
+    width: 100%;
+    max-width: 1200px;
+    height: 48px;
+    margin: 0 auto; }
+  .follow-bottom {
+    position: static;
+    width: 50%;
+    float: left; }
+  .logo-wrapper-bottom {
+    position: static;
+    width: 50%;
+    float: left; } }
+
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .page-title, .contact-wrapper {
+    width: 560px; }
+  .page-text {
+    width: 600px;
+    font-size: 1em; } }
+
+@media screen and (min-width: 750px) and (max-width: 999px) {
+  .options {
+    max-width: 112px; } }
+
+@media screen and (min-width: 1000px) {
+  .options {
+    max-width: 130px; } }
