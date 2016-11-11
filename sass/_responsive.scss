@@ -111,7 +111,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 699px) {
-  .page-title, .page-text {
+  .page-title, .page-text, .blog-details-wrapper {
     width: 60%;
   }
   .contact-wrapper {
@@ -159,7 +159,7 @@
   .page-body {
     padding-top: 48px;
   }
-  .page-title, .page-text {
+  .page-title, .page-text, .blog-details-wrapper {
     width: 50%;
   }
   .contact-wrapper {
@@ -244,7 +244,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .page-title, .contact-wrapper {
+  .page-title, .contact-wrapper, .blog-details-wrapper {
     max-width: 960px;
   }
   .page-text {

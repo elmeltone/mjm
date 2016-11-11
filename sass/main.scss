@@ -91,7 +91,7 @@ a {
   color: $dark;
   &:hover {
     cursor: pointer;
-    color: darken($emphasis, 5%);
+    color: lighten($dark, 30%);
   }
 }
 
