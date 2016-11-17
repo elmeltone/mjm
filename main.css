@@ -2826,12 +2826,13 @@ ul {
   min-height: 80px;
   padding: 4px;
   margin: 0 auto;
-  /*border-bottom: 1px solid $black;*/ }
+  border-bottom: 1px solid #000000; }
 
 .blog-graphic-wrapper {
   width: 50%;
   max-width: 64px;
-  float: left; }
+  float: left;
+  margin-top: 8px; }
 
 .blog-description-wrapper {
   width: 100%;
@@ -2847,6 +2848,7 @@ ul {
   color: #595959;
   font-size: 10px;
   margin-top: 8px;
+  margin-bottom: 8px;
   text-decoration: none; }
 
 .early-post {
@@ -2854,6 +2856,16 @@ ul {
 
 .early-footer {
   position: static; }
+
+.dont-pay-img {
+  width: 60%;
+  min-width: 184px; }
+
+.dont-pay-wrapper {
+  width: 50%;
+  max-width: 64px;
+  float: left;
+  margin-top: 16px; }
 
 /***** Responsive **********/
 /*** Responsive ***/
@@ -3038,6 +3050,10 @@ ul {
 @media screen and (min-width: 750px) {
   .page-title, .contact-wrapper, .blog-details-wrapper {
     max-width: 960px; }
+  .blog-graphic-wrapper {
+    margin-top: 0; }
+  .dont-pay-wrapper {
+    margin-top: 10px; }
   .page-text {
     max-width: 960px;
     font-size: 1em; } }
