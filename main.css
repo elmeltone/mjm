@@ -2825,7 +2825,8 @@ ul {
   width: 70%;
   min-height: 80px;
   padding: 4px;
-  margin: 0 auto;
+  margin: -1px auto 0 auto;
+  border-top: 1px solid #000000;
   border-bottom: 1px solid #000000; }
 
 .blog-graphic-wrapper {
@@ -3050,6 +3051,8 @@ ul {
 @media screen and (min-width: 750px) {
   .page-title, .contact-wrapper, .blog-details-wrapper {
     max-width: 960px; }
+  .blog-details-wrapper {
+    border: none; }
   .blog-graphic-wrapper {
     margin-top: 0; }
   .dont-pay-wrapper {
